@@ -1,1 +1,335 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  padding: 92px 20px 90px 20px;
+}
+
+.header__menu {
+  margin: 45px 32px 45px 30px;
+  font-size: 18px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+}
+
+.header__links-list {
+  display: flex;
+  width: 400px;
+  list-style-type: circle;
+  justify-content: space-between;
+}
+
+.header__links-list-item {
+  letter-spacing: 1%;
+  margin-right: 10px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+  letter-spacing: 0%;
+}
+
+.header__logo-img img {
+  width: 135px;
+  height: 110px;
+}
+
+.header__address {
+  padding: 0 0 5px 193px;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.header__address p {
+  font-size: 18px;
+  width: 237px;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cover__image {
+  display: flex;
+  width: 1370px;
+  height: auto;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+/* Через background-image у меня не вышло,картинки не было, в чем причина ошибки я не нашла, но пробовала разные способы, в итоге картинка появилась только при этом */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 757px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.cover__text {
+  position: absolute;
+  top: 0;
+  color: white;
+  z-index: 3;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.aligned-text {
+  position: absolute;
+  top: 148px;
+  left: 50px;
+  line-height: 1.5;
+}
+
+.aligned-text_center {
+  position: absolute;
+  top: 275px;
+  left: 335px;
+  line-height: 1.5;
+}
+
+.aligned-text_right {
+  position: absolute;
+  top: 395px;
+  left: 634px;
+  line-height: 1.5;
+}
+
+.cover__description {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  color: white;
+  z-index: 3;
+}
+
+.cover__description-text {
+  display: inline-block;
+  margin: 25px 60px;
+  font-size: 22px;
+  font-weight: 400;
+  word-spacing: 18px;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  position: relative;
+  display: inline-block;
+  margin-left: 17px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  z-index: 3;
+  font-size: 22px;
+  font-weight: 500;
+  width: 255px;
+  height: 51px;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lots {
+  padding: 95px 25px;
+}
+
+.lots__heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 54px 0 26px 38px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 563px;
+  width: 334px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 51px 0 0 37px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  color: white;
+  width: 300px;
+  height: auto;
+  text-decoration: underline;
+}
+
+.card__text {
+  margin: 0 0 47px 39px;
+  font-size: 20px;
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-decoration: none;
+  width: 255px;
+  height: auto;
+}
+
+
+.lots__look-more-link {
+  font-size: 20px;
+  display: block;
+  margin: 31px 39px;
+  text-decoration: underline;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 359px 1fr;
+  width: 1052px;
+  margin-bottom: 100px;
+
+}
+
+.about__column-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 55px 0 0 25px;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  max-width: 60%; 
+  max-height: 60%;
+}
+
+.about__column-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+  padding: 157px 0 0 23px;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+  width: 738px;
+}
+
+.about__text p {
+  margin: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 50px 80px 52px;
+  font-size: 18px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 24px;
+}
+
+.footer__address p {
+  font-size: 18px;
+  width: 237px;
+}
+
+.footer__menu {
+  font-size: 18px;
+  text-align: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+.footer__links-list {
+  display: flex;
+  width: 400px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.footer__links-list-item {
+  letter-spacing: 1%;
+  margin-right: 10px;
+}
+
+.footer__social-icon {
+  display: flex;
+  gap: 48px; 
+}
+
+.footer__social-icon img {
+  width: 48px;
+  height: 48px;
+}
