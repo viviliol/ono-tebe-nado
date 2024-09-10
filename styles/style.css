@@ -2,6 +2,7 @@ address {
   display: flex;
   flex-direction: column;
   line-height: 1.35;
+  font-style: normal;
 }
 
 address p {
@@ -87,17 +88,17 @@ address p {
   min-width: 1060px;
   min-height: 100%;
   z-index: 3;
+  padding: 0;
 }
 
 .aligned-text {
   display: flex;
-  justify-content: flex-start;
-  padding: 0 0 5px 30px;
+  padding-left: 28px;
 }
 
 .aligned-text_center {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .aligned-text_right {
@@ -151,7 +152,7 @@ address p {
   width: 255px;
   height: 51px;
   cursor: pointer;
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-weight: 500;
 }
 
@@ -297,7 +298,7 @@ address p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 57px;
+  padding: 57px 0 88px 0;
 }
 
 .footer__address {
