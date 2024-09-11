@@ -88,12 +88,11 @@ address p {
   min-width: 1060px;
   min-height: 100%;
   z-index: 3;
-  padding: 0;
+  padding: 0 29px;
 }
 
 .aligned-text {
   display: flex;
-  padding-left: 28px;
 }
 
 .aligned-text_center {
@@ -125,7 +124,7 @@ address p {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 0 10px 78px;
+  padding: 0 0 11px 78px;
   z-index: 3;
   gap: 65px;
   justify-content: start;
@@ -152,7 +151,7 @@ address p {
   width: 255px;
   height: 51px;
   cursor: pointer;
-  font-family: 'Raleway';
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 500;
 }
 
